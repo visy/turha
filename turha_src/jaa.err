@@ -1,0 +1,22 @@
+musa.cpp(1): Error! E059: col(21) unable to open 'midasdll.h' 
+musa.cpp(1): Note! N393: col(21) included from jaa.cpp(15) 
+musa.cpp(2): Error! E059: col(18) unable to open 'midas.h' 
+musa.cpp(3): Error! E059: col(15) unable to open 'vu.h' 
+musa.cpp(10): Error! E224: col(22) 'MIDAS_CALL' is a variable of type 'void' 
+musa.cpp(10): Error! E006: col(17) syntax error; probable cause: missing ';' 
+musa.cpp(23): Error! E336: col(17) declaration specifiers are required to declare 'gmpModule' 
+musa.cpp(23): Error! E121: col(17) syntax error 
+musa.cpp(24): Error! E336: col(17) declaration specifiers are required to declare 'gmpInformation' 
+musa.cpp(24): Error! E121: col(17) syntax error 
+musa.cpp(25): Error! E336: col(33) declaration specifiers are required to declare 'MIDASmodulePlayHandle' 
+musa.cpp(25): Error! E498: col(23) syntax error before 'playHandle'; probable cause: incorrectly spelled type name 
+musa.cpp(33): Error! E006: col(26) syntax error; probable cause: missing ';' 
+musa.cpp(34): Error! E029: col(21) symbol 'gmpChannel' has not been declared 
+musa.cpp(34): Error! E029: col(22) symbol 'chan' has not been declared 
+musa.cpp(36): Error! E029: col(17) symbol 'info' has not been declared 
+musa.cpp(39): Error! E029: col(23) symbol 'midasSD' has not been declared 
+musa.cpp(39): Error! E029: col(44) symbol 'rate' has not been declared 
+musa.cpp(40): Error! E029: col(27) symbol 'midasError' has not been declared 
+musa.cpp(44): Error! E029: col(27) symbol 'midasError' has not been declared 
+musa.cpp(48): Error! E029: col(27) symbol 'midasError' has not been declared 
+musa.cpp(52): Error! E133: col(27) too many errors: compilation aborted 

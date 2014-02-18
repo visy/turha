@@ -1,0 +1,7 @@
+debug all
+system pmodew
+option caseexact
+option stack=256k
+library ..\midas\lib\dos\wcretail\midas.lib
+file jaa
+name jaa

@@ -1,0 +1,324 @@
+
+src/virtual.o src/virtual.lo: src/virtual.c src/virtual.h src/common.h include/xmp.h \
+  src/mixer.h
+src/format.o src/format.lo: src/format.c src/loaders/prowizard/prowiz.h src/list.h \
+  src/common.h include/xmp.h src/format.h src/hio.h
+src/misc.o src/misc.lo: src/misc.c src/common.h include/xmp.h
+src/period.o src/period.lo: src/period.c src/common.h include/xmp.h src/period.h
+src/player.o src/player.lo: src/player.c src/virtual.h src/common.h include/xmp.h \
+  src/period.h src/effects.h src/player.h src/lfo.h src/envelope.h \
+  src/synth.h src/mixer.h src/extras.h
+src/read_event.o src/read_event.lo: src/read_event.c src/common.h include/xmp.h src/player.h \
+  src/lfo.h src/envelope.h src/effects.h src/virtual.h src/period.h \
+  src/med_extras.h
+src/dataio.o src/dataio.lo: src/dataio.c src/common.h include/xmp.h
+src/mkstemp.o src/mkstemp.lo: src/mkstemp.c
+src/fnmatch.o src/fnmatch.lo: src/fnmatch.c
+src/md5.o src/md5.lo: src/md5.c src/common.h include/xmp.h src/md5.h
+src/lfo.o src/lfo.lo: src/lfo.c src/lfo.h
+src/envelope.o src/envelope.lo: src/envelope.c src/common.h include/xmp.h src/envelope.h
+src/scan.o src/scan.lo: src/scan.c src/common.h include/xmp.h src/effects.h src/mixer.h
+src/control.o src/control.lo: src/control.c src/format.h src/common.h include/xmp.h \
+  src/hio.h src/virtual.h src/mixer.h
+src/med_extras.o src/med_extras.lo: src/med_extras.c src/common.h include/xmp.h src/player.h \
+  src/lfo.h src/envelope.h src/virtual.h src/med_extras.h
+src/filter.o src/filter.lo: src/filter.c include/xmp.h src/common.h src/mixer.h
+src/fmopl.o src/fmopl.lo: src/fmopl.c src/fmopl.h
+src/effects.o src/effects.lo: src/effects.c src/common.h include/xmp.h src/player.h \
+  src/lfo.h src/envelope.h src/effects.h src/period.h src/virtual.h \
+  src/mixer.h src/extras.h
+src/mixer.o src/mixer.lo: src/mixer.c src/common.h include/xmp.h src/virtual.h src/mixer.h \
+  src/synth.h src/period.h
+src/synth_null.o src/synth_null.lo: src/synth_null.c include/xmp.h src/common.h src/synth.h
+src/mix_all.o src/mix_all.lo: src/mix_all.c src/common.h include/xmp.h src/virtual.h \
+  src/mixer.h src/synth.h src/precomp_lut.h
+src/adlib.o src/adlib.lo: src/adlib.c include/xmp.h src/common.h src/synth.h src/fmopl.h
+src/load_helpers.o src/load_helpers.lo: src/load_helpers.c src/fnmatch.h src/common.h \
+  include/xmp.h src/synth.h src/loaders/loader.h src/effects.h \
+  src/format.h src/hio.h
+src/load.o src/load.lo: src/load.c src/format.h src/common.h include/xmp.h src/hio.h \
+  src/list.h src/md5.h src/extras.h
+src/hio.o src/hio.lo: src/hio.c src/common.h include/xmp.h src/hio.h
+src/hmn_extras.o src/hmn_extras.lo: src/hmn_extras.c src/common.h include/xmp.h src/player.h \
+  src/lfo.h src/envelope.h src/virtual.h src/effects.h src/hmn_extras.h
+src/extras.o src/extras.lo: src/extras.c src/common.h include/xmp.h src/player.h src/lfo.h \
+  src/envelope.h src/extras.h src/med_extras.h src/hmn_extras.h
+src/smix.o src/smix.lo: src/smix.c src/common.h include/xmp.h src/period.h src/player.h \
+  src/lfo.h src/envelope.h src/hio.h
+src/loaders/common.o src/loaders/common.lo: src/loaders/common.c include/xmp.h src/common.h src/period.h \
+  src/loaders/loader.h src/effects.h src/format.h src/hio.h
+src/loaders/iff.o src/loaders/iff.lo: src/loaders/iff.c src/common.h include/xmp.h src/list.h \
+  src/loaders/iff.h src/hio.h src/loaders/loader.h src/effects.h \
+  src/format.h
+src/loaders/itsex.o src/loaders/itsex.lo: src/loaders/itsex.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/asif.o src/loaders/asif.lo: src/loaders/asif.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/asif.h
+src/loaders/voltable.o src/loaders/voltable.lo: src/loaders/voltable.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/sample.o src/loaders/sample.lo: src/loaders/sample.c src/common.h include/xmp.h src/synth.h \
+  src/loaders/loader.h src/effects.h src/format.h src/hio.h
+src/loaders/xm_load.o src/loaders/xm_load.lo: src/loaders/xm_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/xm.h
+src/loaders/mod_load.o src/loaders/mod_load.lo: src/loaders/mod_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/mod.h
+src/loaders/s3m_load.o src/loaders/s3m_load.lo: src/loaders/s3m_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/s3m.h \
+  src/period.h src/synth.h
+src/loaders/stm_load.o src/loaders/stm_load.lo: src/loaders/stm_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/669_load.o src/loaders/669_load.lo: src/loaders/669_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/far_load.o src/loaders/far_load.lo: src/loaders/far_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/mtm_load.o src/loaders/mtm_load.lo: src/loaders/mtm_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/ptm_load.o src/loaders/ptm_load.lo: src/loaders/ptm_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/okt_load.o src/loaders/okt_load.lo: src/loaders/okt_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h
+src/loaders/amd_load.o src/loaders/amd_load.lo: src/loaders/amd_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/synth.h
+src/loaders/rad_load.o src/loaders/rad_load.lo: src/loaders/rad_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/synth.h
+src/loaders/ult_load.o src/loaders/ult_load.lo: src/loaders/ult_load.c src/period.h src/loaders/loader.h \
+  src/common.h include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/mdl_load.o src/loaders/mdl_load.lo: src/loaders/mdl_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h src/period.h
+src/loaders/it_load.o src/loaders/it_load.lo: src/loaders/it_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/it.h \
+  src/period.h
+src/loaders/stx_load.o src/loaders/stx_load.lo: src/loaders/stx_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/s3m.h \
+  src/period.h
+src/loaders/pt3_load.o src/loaders/pt3_load.lo: src/loaders/pt3_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/mod.h \
+  src/loaders/iff.h src/list.h
+src/loaders/sfx_load.o src/loaders/sfx_load.lo: src/loaders/sfx_load.c src/period.h src/loaders/loader.h \
+  src/common.h include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/flt_load.o src/loaders/flt_load.lo: src/loaders/flt_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/mod.h \
+  src/period.h
+src/loaders/st_load.o src/loaders/st_load.lo: src/loaders/st_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/mod.h \
+  src/period.h
+src/loaders/emod_load.o src/loaders/emod_load.lo: src/loaders/emod_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h
+src/loaders/imf_load.o src/loaders/imf_load.lo: src/loaders/imf_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/digi_load.o src/loaders/digi_load.lo: src/loaders/digi_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/fnk_load.o src/loaders/fnk_load.lo: src/loaders/fnk_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/ice_load.o src/loaders/ice_load.lo: src/loaders/ice_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/hsc_load.o src/loaders/hsc_load.lo: src/loaders/hsc_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/synth.h
+src/loaders/liq_load.o src/loaders/liq_load.lo: src/loaders/liq_load.c src/period.h src/loaders/loader.h \
+  src/common.h include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/ims_load.o src/loaders/ims_load.lo: src/loaders/ims_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/masi_load.o src/loaders/masi_load.lo: src/loaders/masi_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h src/period.h
+src/loaders/amf_load.o src/loaders/amf_load.lo: src/loaders/amf_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/psm_load.o src/loaders/psm_load.lo: src/loaders/psm_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/stim_load.o src/loaders/stim_load.lo: src/loaders/stim_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/mmd_common.o src/loaders/mmd_common.lo: src/loaders/mmd_common.c src/loaders/med.h src/common.h \
+  include/xmp.h src/hio.h src/loaders/loader.h src/effects.h \
+  src/format.h src/med_extras.h
+src/loaders/mmd1_load.o src/loaders/mmd1_load.lo: src/loaders/mmd1_load.c src/loaders/med.h src/common.h \
+  include/xmp.h src/hio.h src/loaders/loader.h src/effects.h \
+  src/format.h src/med_extras.h
+src/loaders/mmd3_load.o src/loaders/mmd3_load.lo: src/loaders/mmd3_load.c src/loaders/med.h src/common.h \
+  include/xmp.h src/hio.h src/loaders/loader.h src/effects.h \
+  src/format.h src/med_extras.h
+src/loaders/rtm_load.o src/loaders/rtm_load.lo: src/loaders/rtm_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/dmf_load.o src/loaders/dmf_load.lo: src/loaders/dmf_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h src/period.h
+src/loaders/tcb_load.o src/loaders/tcb_load.lo: src/loaders/tcb_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/dt_load.o src/loaders/dt_load.lo: src/loaders/dt_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h src/period.h
+src/loaders/gtk_load.o src/loaders/gtk_load.lo: src/loaders/gtk_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/no_load.o src/loaders/no_load.lo: src/loaders/no_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/arch_load.o src/loaders/arch_load.lo: src/loaders/arch_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h
+src/loaders/sym_load.o src/loaders/sym_load.lo: src/loaders/sym_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h \
+  src/depackers/readlzw.h
+src/loaders/dtt_load.o src/loaders/dtt_load.lo: src/loaders/dtt_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/med2_load.o src/loaders/med2_load.lo: src/loaders/med2_load.c src/period.h src/loaders/loader.h \
+  src/common.h include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/med3_load.o src/loaders/med3_load.lo: src/loaders/med3_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/med4_load.o src/loaders/med4_load.lo: src/loaders/med4_load.c src/loaders/med.h src/common.h \
+  include/xmp.h src/hio.h src/loaders/loader.h src/effects.h \
+  src/format.h src/med_extras.h
+src/loaders/dbm_load.o src/loaders/dbm_load.lo: src/loaders/dbm_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h src/period.h
+src/loaders/umx_load.o src/loaders/umx_load.lo: src/loaders/umx_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/gdm_load.o src/loaders/gdm_load.lo: src/loaders/gdm_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/pw_load.o src/loaders/pw_load.lo: src/loaders/pw_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/mod.h \
+  src/period.h src/loaders/prowizard/prowiz.h src/list.h
+src/loaders/gal5_load.o src/loaders/gal5_load.lo: src/loaders/gal5_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h src/period.h
+src/loaders/gal4_load.o src/loaders/gal4_load.lo: src/loaders/gal4_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/iff.h \
+  src/list.h src/period.h
+src/loaders/mfp_load.o src/loaders/mfp_load.lo: src/loaders/mfp_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h
+src/loaders/asylum_load.o src/loaders/asylum_load.lo: src/loaders/asylum_load.c src/loaders/loader.h \
+  src/common.h include/xmp.h src/effects.h src/format.h src/hio.h \
+  src/period.h
+src/loaders/hmn_load.o src/loaders/hmn_load.lo: src/loaders/hmn_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/loaders/mod.h \
+  src/period.h src/hmn_extras.h
+src/loaders/mgt_load.o src/loaders/mgt_load.lo: src/loaders/mgt_load.c src/loaders/loader.h src/common.h \
+  include/xmp.h src/effects.h src/format.h src/hio.h src/period.h
+src/loaders/prowizard/prowiz.o src/loaders/prowizard/prowiz.lo: src/loaders/prowizard/prowiz.c include/xmp.h \
+  src/loaders/prowizard/prowiz.h src/list.h src/common.h src/format.h \
+  src/hio.h
+src/loaders/prowizard/ptktable.o src/loaders/prowizard/ptktable.lo: src/loaders/prowizard/ptktable.c \
+  src/loaders/prowizard/prowiz.h src/list.h src/common.h include/xmp.h \
+  src/format.h src/hio.h
+src/loaders/prowizard/tuning.o src/loaders/prowizard/tuning.lo: src/loaders/prowizard/tuning.c
+src/loaders/prowizard/ac1d.o src/loaders/prowizard/ac1d.lo: src/loaders/prowizard/ac1d.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/di.o src/loaders/prowizard/di.lo: src/loaders/prowizard/di.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/eureka.o src/loaders/prowizard/eureka.lo: src/loaders/prowizard/eureka.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/fc-m.o src/loaders/prowizard/fc-m.lo: src/loaders/prowizard/fc-m.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/fuchs.o src/loaders/prowizard/fuchs.lo: src/loaders/prowizard/fuchs.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/fuzzac.o src/loaders/prowizard/fuzzac.lo: src/loaders/prowizard/fuzzac.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/gmc.o src/loaders/prowizard/gmc.lo: src/loaders/prowizard/gmc.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/heatseek.o src/loaders/prowizard/heatseek.lo: src/loaders/prowizard/heatseek.c \
+  src/loaders/prowizard/prowiz.h src/list.h src/common.h include/xmp.h \
+  src/format.h src/hio.h
+src/loaders/prowizard/kris.o src/loaders/prowizard/kris.lo: src/loaders/prowizard/kris.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/ksm.o src/loaders/prowizard/ksm.lo: src/loaders/prowizard/ksm.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/mp.o src/loaders/prowizard/mp.lo: src/loaders/prowizard/mp.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/np1.o src/loaders/prowizard/np1.lo: src/loaders/prowizard/np1.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/np2.o src/loaders/prowizard/np2.lo: src/loaders/prowizard/np2.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/np3.o src/loaders/prowizard/np3.lo: src/loaders/prowizard/np3.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/p61a.o src/loaders/prowizard/p61a.lo: src/loaders/prowizard/p61a.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/pm10c.o src/loaders/prowizard/pm10c.lo: src/loaders/prowizard/pm10c.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/pm18a.o src/loaders/prowizard/pm18a.lo: src/loaders/prowizard/pm18a.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/pha.o src/loaders/prowizard/pha.lo: src/loaders/prowizard/pha.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/prun1.o src/loaders/prowizard/prun1.lo: src/loaders/prowizard/prun1.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/prun2.o src/loaders/prowizard/prun2.lo: src/loaders/prowizard/prun2.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/tdd.o src/loaders/prowizard/tdd.lo: src/loaders/prowizard/tdd.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/unic.o src/loaders/prowizard/unic.lo: src/loaders/prowizard/unic.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/unic2.o src/loaders/prowizard/unic2.lo: src/loaders/prowizard/unic2.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/wn.o src/loaders/prowizard/wn.lo: src/loaders/prowizard/wn.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/zen.o src/loaders/prowizard/zen.lo: src/loaders/prowizard/zen.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/tp3.o src/loaders/prowizard/tp3.lo: src/loaders/prowizard/tp3.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/p40.o src/loaders/prowizard/p40.lo: src/loaders/prowizard/p40.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/xann.o src/loaders/prowizard/xann.lo: src/loaders/prowizard/xann.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/theplayer.o src/loaders/prowizard/theplayer.lo: src/loaders/prowizard/theplayer.c \
+  src/loaders/prowizard/prowiz.h src/list.h src/common.h include/xmp.h \
+  src/format.h src/hio.h
+src/loaders/prowizard/pp21.o src/loaders/prowizard/pp21.lo: src/loaders/prowizard/pp21.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/starpack.o src/loaders/prowizard/starpack.lo: src/loaders/prowizard/starpack.c \
+  src/loaders/prowizard/prowiz.h src/list.h src/common.h include/xmp.h \
+  src/format.h src/hio.h
+src/loaders/prowizard/titanics.o src/loaders/prowizard/titanics.lo: src/loaders/prowizard/titanics.c \
+  src/loaders/prowizard/prowiz.h src/list.h src/common.h include/xmp.h \
+  src/format.h src/hio.h
+src/loaders/prowizard/skyt.o src/loaders/prowizard/skyt.lo: src/loaders/prowizard/skyt.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/novotrade.o src/loaders/prowizard/novotrade.lo: src/loaders/prowizard/novotrade.c \
+  src/loaders/prowizard/prowiz.h src/list.h src/common.h include/xmp.h \
+  src/format.h src/hio.h
+src/loaders/prowizard/hrt.o src/loaders/prowizard/hrt.lo: src/loaders/prowizard/hrt.c src/loaders/prowizard/prowiz.h \
+  src/list.h src/common.h include/xmp.h src/format.h src/hio.h
+src/loaders/prowizard/noiserun.o src/loaders/prowizard/noiserun.lo: src/loaders/prowizard/noiserun.c \
+  src/loaders/prowizard/prowiz.h src/list.h src/common.h include/xmp.h \
+  src/format.h src/hio.h
+src/depackers/ppdepack.o src/depackers/ppdepack.lo: src/depackers/ppdepack.c src/common.h include/xmp.h
+src/depackers/unsqsh.o src/depackers/unsqsh.lo: src/depackers/unsqsh.c src/common.h include/xmp.h
+src/depackers/mmcmp.o src/depackers/mmcmp.lo: src/depackers/mmcmp.c src/common.h include/xmp.h
+src/depackers/readrle.o src/depackers/readrle.lo: src/depackers/readrle.c src/depackers/readrle.h
+src/depackers/readlzw.o src/depackers/readlzw.lo: src/depackers/readlzw.c src/depackers/readrle.h src/common.h \
+  include/xmp.h src/depackers/readlzw.h
+src/depackers/unarc.o src/depackers/unarc.lo: src/depackers/unarc.c src/common.h include/xmp.h \
+  src/depackers/readrle.h src/depackers/readhuff.h \
+  src/depackers/readlzw.h
+src/depackers/arcfs.o src/depackers/arcfs.lo: src/depackers/arcfs.c src/common.h include/xmp.h \
+  src/depackers/readrle.h src/depackers/readhuff.h \
+  src/depackers/readlzw.h
+src/depackers/xfd.o src/depackers/xfd.lo: src/depackers/xfd.c
+src/depackers/inflate.o src/depackers/inflate.lo: src/depackers/inflate.c src/common.h include/xmp.h \
+  src/depackers/inflate.h src/depackers/crc32.h
+src/depackers/muse.o src/depackers/muse.lo: src/depackers/muse.c src/common.h include/xmp.h \
+  src/depackers/inflate.h
+src/depackers/unlzx.o src/depackers/unlzx.lo: src/depackers/unlzx.c src/common.h include/xmp.h \
+  src/depackers/crc32.h
+src/depackers/s404_dec.o src/depackers/s404_dec.lo: src/depackers/s404_dec.c src/common.h include/xmp.h
+src/depackers/unzip.o src/depackers/unzip.lo: src/depackers/unzip.c src/common.h include/xmp.h \
+  src/depackers/inflate.h src/depackers/crc32.h
+src/depackers/gunzip.o src/depackers/gunzip.lo: src/depackers/gunzip.c src/common.h include/xmp.h \
+  src/depackers/inflate.h src/depackers/crc32.h
+src/depackers/uncompress.o src/depackers/uncompress.lo: src/depackers/uncompress.c
+src/depackers/unxz.o src/depackers/unxz.lo: src/depackers/unxz.c src/depackers/xz.h src/common.h \
+  include/xmp.h src/depackers/crc32.h
+src/depackers/bunzip2.o src/depackers/bunzip2.lo: src/depackers/bunzip2.c src/common.h include/xmp.h \
+  src/depackers/crc32.h
+src/depackers/unlha.o src/depackers/unlha.lo: src/depackers/unlha.c src/common.h include/xmp.h
+src/depackers/xz_dec_lzma2.o src/depackers/xz_dec_lzma2.lo: src/depackers/xz_dec_lzma2.c src/depackers/xz_private.h \
+  src/depackers/xz_config.h src/depackers/xz.h src/common.h \
+  include/xmp.h src/depackers/xz_lzma2.h
+src/depackers/xz_dec_stream.o src/depackers/xz_dec_stream.lo: src/depackers/xz_dec_stream.c src/depackers/xz_private.h \
+  src/depackers/xz_config.h src/depackers/xz.h src/common.h \
+  include/xmp.h src/depackers/xz_stream.h src/depackers/crc32.h
+src/depackers/oxm.o src/depackers/oxm.lo: src/depackers/oxm.c src/depackers/vorbis.h src/common.h \
+  include/xmp.h
+src/depackers/vorbis.o src/depackers/vorbis.lo: src/depackers/vorbis.c src/depackers/vorbis.h
+src/depackers/crc32.o src/depackers/crc32.lo: src/depackers/crc32.c src/common.h include/xmp.h \
+  src/depackers/crc32.h
+test/test.o test/test.lo: test/test.c test/md5.h test/../src/common.h include/xmp.h
+test/md5.o test/md5.lo: test/md5.c test/../src/common.h include/xmp.h test/md5.h
